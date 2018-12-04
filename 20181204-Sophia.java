@@ -2,17 +2,17 @@
 
 //main idea:String,class
 public class HiddenWord{
-    private String puzzel;
+    private String puzzle;
     public HiddenWord(String hiddenWord){
-        this.puzzel = hiddenWord;
+        this.puzzle = hiddenWord;
         }
-    public String getHint( String guess){
+    public String getHint(String guess){
         String b="";
-        for(int i=0,i<puzzel.length(),i++){
-            if(guess.substring(i,i+1).equals(puzzel.substring(i,i+1))){
-                b+=puzzel.get(i);
+        for(int i=0,i<puzzle.length(),i++){
+            if(guess.substring(i,i+1).equals(puzzle.substring(i,i+1))){
+                b+=puzzle.get(i);
             }
-            if(puzzel.indexOf(guess.substring(i,i+1)=-1)){
+            if(puzzle.indexOf(guess.substring(i,i+1)=-1)){
                 b+="*";}
             else
                 b+="+";
