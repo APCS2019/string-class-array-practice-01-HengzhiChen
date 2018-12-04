@@ -2,18 +2,16 @@
 
 //main idea:String,class
 public class HiddenWord{
-    String hiddenWord;
-    String sth;
-    public HiddenWord(String hiddenWord, String sth){
-        this.hiddenWord = hiddenWord;
-        this.sth = sth;
+    private String puzzel;
+    public HiddenWord(String hiddenWord){
+        this.puzzel = hiddenWord;
         }
-    public String getHint( String hiddenWord, String sth){
-        for(int i=0,i<hiddenWord.length(),i++){
-            if(sth.get(i).equals(hiddenWord.get(i)){
-                b+=hiddenWord.get(i);
+    public String getHint( String guess){
+        for(int i=0,i<puzzel.length(),i++){
+            if(sth.substring(i,i+1).equals(puzzel.substring(i,i+1){
+                b+=puzzel.get(i);
             }
-            if(sth.get(i).compareTo(hiddenWord)=-1){
+            if(puzzel.indexOf(guess.substring(i,i+1)=-1{
                 b+="*";}
             else
                 b+="+";
