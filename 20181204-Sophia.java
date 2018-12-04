@@ -7,15 +7,18 @@ public class HiddenWord{
         this.puzzel = hiddenWord;
         }
     public String getHint( String guess){
+        String b="";
         for(int i=0,i<puzzel.length(),i++){
-            if(sth.substring(i,i+1).equals(puzzel.substring(i,i+1){
+            if(guess.substring(i,i+1).equals(puzzel.substring(i,i+1))){
                 b+=puzzel.get(i);
             }
-            if(puzzel.indexOf(guess.substring(i,i+1)=-1{
+            if(puzzel.indexOf(guess.substring(i,i+1)=-1)){
                 b+="*";}
             else
                 b+="+";
                 }
+         }
             return b;
             }
+       } 
         
