@@ -10,7 +10,7 @@ public class HiddenWord{
         String b="";
         for(int i=0,i<puzzle.length(),i++){
             if(guess.substring(i,i+1).equals(puzzle.substring(i,i+1))){
-                b+=puzzle.get(i);
+                b+=puzzle.substring(i，i+1);
             }
             if(puzzle.indexOf(guess.substring(i,i+1)=-1)){
                 b+="*";}
